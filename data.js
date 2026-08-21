@@ -57,7 +57,7 @@ const catalogData = [
                     { name: "Negro", hex: "#000000", prefix: "NEG", image: "imagenes/TANGA-ALTO-NEGRO.png" },
                     { name: "Blanco", hex: "#FFFFFF", prefix: "BLA", image: "imagenes/TANGA-ALTO-BLANCA.png" },
                     { name: "Azul", hex: "#89CFF0", prefix: "AZU", image: "imagenes/TANGA-ALTO-AZUL.png" },
-                    { name: "Beige", hex: "#D2B48C", prefix: "BEI", image: "imagenes/TANGA-ALTO-BEIGE.PNG" }
+                    { name: "Beige", hex: "#D2B48C", prefix: "BEI", image: "imagenes/TANGA-ALTO-BEIGE.png" }
                 ]
             },
             {
