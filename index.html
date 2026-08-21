@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALIMA | Lencería & Ropa Interior</title>
+    <!-- Fuentes elegantes desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER GLOBAL -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Botón dinámico para volver -->
+            <button id="back-btn" class="back-btn hidden" aria-label="Volver">← Volver</button>
+            
+            <!-- Logo de la marca (Imagen) -->
+            <img 
+                src="imagenes/kalima logo png.png"
+                alt="KALIMA Logo" 
+                class="brand-logo-img" 
+                id="brand-logo"
+            >
+        </div>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL VISTAS SPA -->
+    <main id="app-content" class="main-content">
+        <!-- Contenido dinámico desde app.js -->
+    </main>
+
+    <!-- FOOTER GLOBAL -->
+    <footer class="footer">
+        <p class="brand-quote">
+            "Una marca que entiende que la ropa interior no es solo una prenda: es lo primero que toca la piel y lo último que debería incomodar."
+        </p>
+        <p class="copyright">&copy; 2026 KALIMA. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- SCRIPTS EN ORDEN CORRECTO -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

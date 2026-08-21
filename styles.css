@@ -1,0 +1,368 @@
+/* ==========================================================================
+   1. VARIABLES Y RESET (Nude/Beige/Elegante)
+   ========================================================================== */
+:root {
+    --bg-main: #FAFAFA;
+    --bg-card: #FFFFFF;
+    --bg-accent: #F4EBE1; /* Warm Nude/Beige */
+    --text-primary: #2B2A29;
+    --text-muted: #787571;
+    --border-color: #E8E2DC;
+    --active-color: #C08A72; /* Terracota suave */
+    
+    --font-heading: 'Cormorant Garamond', serif;
+    --font-body: 'Montserrat', sans-serif;
+
+    --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ==========================================================================
+   2. HEADER & FOOTER
+   ========================================================================== */
+.header {
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.brand-logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.brand-logo-img:hover {
+    opacity: 0.8;
+}
+
+.back-btn {
+    position: absolute;
+    left: 1.5rem;
+    background: none;
+    border: none;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    transition: var(--transition);
+}
+
+.back-btn:hover {
+    color: var(--text-primary);
+}
+
+.footer {
+    background-color: var(--bg-accent);
+    padding: 3rem 1.5rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+.brand-quote {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-style: italic;
+    max-width: 650px;
+    margin: 0 auto 1rem auto;
+    line-height: 1.6;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+}
+
+/* ==========================================================================
+   3. CONTENEDORES Y ESTRUCTURA (Mobile-First)
+   ========================================================================== */
+.main-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.15em;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   4. VISTA 1: CATEGORÍAS (Tarjetas con imagen de fondo)
+   ========================================================================== */
+.categories-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.category-card {
+    position: relative;
+    height: 380px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.category-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.category-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.45) 100%);
+    transition: var(--transition);
+}
+
+.category-card h3 {
+    position: relative;
+    z-index: 2;
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.category-card:hover .category-bg-img {
+    transform: scale(1.06);
+}
+
+.category-card:hover .category-overlay {
+    background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.6) 100%);
+}
+
+/* ==========================================================================
+   5. VISTA 2: LISTADO DE PRODUCTOS
+   ========================================================================== */
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image-container {
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #F0F0F0;
+}
+
+.product-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.product-card:hover .product-image-container img {
+    transform: scale(1.03);
+}
+
+.product-info {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.product-title {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+}
+
+.product-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.product-price {
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+/* Swatches de Color */
+.swatches-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.swatch {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.swatch.active {
+    box-shadow: 0 0 0 2px var(--bg-card), 0 0 0 4px var(--active-color);
+}
+
+/* ==========================================================================
+   6. VISTA 3: DETALLE DE PRODUCTO
+   ========================================================================== */
+.product-detail-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.detail-gallery img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #F0F0F0;
+}
+
+.detail-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.detail-title {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.detail-price {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.detail-sku {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    background-color: var(--bg-accent);
+    padding: 0.4rem 0.8rem;
+    display: inline-block;
+    width: fit-content;
+    border-radius: 2px;
+}
+
+.selector-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.selector-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+}
+
+.sizes-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.size-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-card);
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    transition: var(--transition);
+}
+
+.size-btn.active, .size-btn:hover {
+    border-color: var(--text-primary);
+    background-color: var(--text-primary);
+    color: var(--bg-card);
+}
+
+/* Ocultar elementos */
+.hidden {
+    display: none !important;
+}
+
+/* ==========================================================================
+   7. ESCRITORIO (Media Queries)
+   ========================================================================== */
+@media (min-width: 768px) {
+    .categories-grid, .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .category-card {
+        height: 450px;
+    }
+
+    .product-detail-layout {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+}
