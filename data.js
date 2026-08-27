@@ -93,7 +93,7 @@ const catalogData = [
                     { name: "Rojo", hex: "#C8102E", prefix: "ROJ", image: "imagenes/BRALET-ROJO.png" }
                 ]
             },
-            {
+            /**{
                 id: "tangas-coquette",
                 prefix: "TCO",
                 name: "TANGAS COQUETTE",
@@ -105,7 +105,7 @@ const catalogData = [
                     { name: "Blanco", hex: "#FFFFFF", prefix: "BLA", image: "imagenes/TANGA-CO-BLANCO.png" },
                     { name: "Rosa", hex: "#FFC0CB", prefix: "ROS", image: "imagenes/TANGA-CO-ROSA.png" }
                 ]
-            }
+            }**/
         ]
     },
     {
