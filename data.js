@@ -114,7 +114,7 @@ const catalogData = [
         name: "MASCULINA",
         image: "imagenes/MASCULINO.png",
         products: [
-            {
+            /**{
                 id: "pantaloneta",
                 prefix: "PTN",
                 name: "PANTALONETA",
@@ -126,7 +126,7 @@ const catalogData = [
                     { name: "Negra", hex: "#050505", prefix: "NEG", image: "imagenes/PANTALONE-AZUL.png" },
                     { name: "Blanca", hex: "#FFFFFF", prefix: "BLA", image: "imagenes/PANTALONE-AZUL.png" }
                 ]
-            },
+            },**/
             {
                 id: "boxer",
                 prefix: "BOX",
