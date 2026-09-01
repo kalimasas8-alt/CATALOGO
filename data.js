@@ -19,7 +19,7 @@ const catalogData = [
                 id: "senorales",
                 prefix: "SEÑ",
                 name: "SEÑORERO",
-                description: "Panty invisible, interior de algodón de máxima suavidad. Opción con franja: +$1.000 COP.",
+                description: "Interior de algodón de máxima suavidad. Opción con franja: +$1.000 COP.",
                 price: "$20.000 COP",
                 sizes: ["XS", "S", "M", "L", "XL"],
                 colors: [
