@@ -105,6 +105,19 @@ const catalogData = [
                     { name: "Blanco", hex: "#FFFFFF", prefix: "BLA", image: "imagenes/TANGA-CO-BLANCO.png" },
                     { name: "Rosa", hex: "#FFC0CB", prefix: "ROS", image: "imagenes/TANGA-CO-ROSA.png" }
                 ]
+            },
+            {
+                id: "tangas-pau",
+                prefix: "TCO",
+                name: "TANGAS PAU",
+                description: "Base gris suave con encaje decorativo. Paquete X3 25.000 cop",
+                price: "$10.000 COP",
+                sizes: ["XS", "S", "M", "L"],
+                colors: [
+                    { name: "Azul", hex: "#89CFF0", prefix: "AZU", image: "imagenes/TANGAPAU-AZUL.png" },
+                    { name: "Blanco", hex: "#FFFFFF", prefix: "BLA", image: "imagenes/TANGAPAU-AZUL.png" },
+                    { name: "Rosa", hex: "#FFC0CB", prefix: "ROS", image: "imagenes/TANGAPAU-AZUL.png" }
+                ]
             }
         ]
     },
