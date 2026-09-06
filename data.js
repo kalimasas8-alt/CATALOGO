@@ -80,19 +80,19 @@ const catalogData = [
         name: "COQUETTE",
         image: "imagenes/coquette.jpg",
         products: [
-            /**{
-                id: "bralet",
+            {
+                id: "brallete",
                 prefix: "BRL",
                 name: "BRALET",
                 description: "Viene en conjunto con pantie delicado de encaje.",
-                price: "$35.000 COP",
+                price: "$25.000 COP",
                 sizes: ["XS", "S", "M", "L", "XL"],
                 colors: [
                     { name: "Rosa", hex: "#FFC0CB", prefix: "ROS", image: "imagenes/BRALET-ROSA.png" },
                     { name: "Azul", hex: "#89CFF0", prefix: "AZU", image: "imagenes/BRALET-AZUL.png" },
                     { name: "Rojo", hex: "#C8102E", prefix: "ROJ", image: "imagenes/BRALET-ROJO.png" }
                 ]
-            },**/
+            },
             {
                 id: "tangas-coquette",
                 prefix: "TCO",
